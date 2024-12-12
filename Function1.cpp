@@ -1,14 +1,18 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-void Display() // function definition
+int sum(int a, int b)
 {
-    cout << "Inside Display function...\n";
+    return a + b;
 }
 
 int main()
 {
-    Display(); // function call
+    int iNo1 = 10, iNo2 = 20;
+
+    int iSum = sum(iNo1, iNo2);
+
+    cout << iSum << "\n";
 
     return 0;
 }

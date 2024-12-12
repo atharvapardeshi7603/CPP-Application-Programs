@@ -1,20 +1,25 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
+
+int minOfTwo(int a, int b)
+{
+    if(a < b)
+    {
+        return a;
+    }
+    else
+    {
+        return b;
+    }
+}
 
 int main()
 {
-    int iValue1 = 0, iValue2 = 0, iAns = 0;
+    int iNo1 = 10, iNo2 = 20;
 
-    cout << "For Addition operation,\n";
-    cout << "Enter the number 1 : \n";
-    cin >> iValue1;
+    int iMin = minOfTwo(iNo1, iNo2);
 
-    cout << "Enter the number 2 : \n";
-    cin >> iValue2;
-
-    iAns = iValue1 + iValue2;
-
-    cout << "Addition of " << iValue1 << " and " << iValue2 << " is : " << iAns << "\n";
+    cout << iMin << "\n";
 
     return 0;
 }
